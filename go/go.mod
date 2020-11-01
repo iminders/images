@@ -12,5 +12,4 @@ require (
 	github.com/minio/minio-go/v6 v6.0.50
 	github.com/rs/cors v1.7.0
 	github.com/stretchr/testify v1.5.1
-	github.com/tradingAI/go v0.0.0-20200320075057-e810e5a7b406
 )
