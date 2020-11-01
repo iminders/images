@@ -1,0 +1,20 @@
+name: Build GoLang Docker Image
+
+on:
+  push:
+    tags:
+      - "v.go.*"
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name:  Build go image
+      run: |
+        echo "build go latest image"
+        cd go && make latest
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
