@@ -8,7 +8,7 @@ require (
 	github.com/golang/glog v0.0.0-20160126235308-23def4e6c14b
 	github.com/golang/protobuf v1.4.3
 	github.com/gorilla/mux v1.8.0
-	github.com/go-gorm/gorm v1.20.5
+	gorm.io/gorm v1.20.5
 	github.com/minio/minio-go/v7 v7.0.5
 	github.com/rs/cors v1.7.0
 	github.com/stretchr/testify v1.5.1
