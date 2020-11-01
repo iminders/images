@@ -1,9 +1,9 @@
 name: go-latest
 
 on:
-  push:
-    tags:
-      - "v.go.*"
+    push:
+        tags:
+            - "v.go.*"
 jobs:
   build:
     runs-on: ubuntu-latest

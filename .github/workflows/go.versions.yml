@@ -1,9 +1,9 @@
 name: go-versions
 
 on:
-  push:
-    branches:
-        - go
+    push:
+        branches:
+            - go
 
 jobs:
   build:
