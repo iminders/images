@@ -2,8 +2,7 @@ name: go
 
 on:
     push:
-        branches:
-            - go
+        branches: [ go ]
 
 jobs:
   build:
