@@ -1,4 +1,4 @@
-name: go-versions
+name: go
 
 on:
     push:

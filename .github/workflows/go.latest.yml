@@ -3,7 +3,7 @@ name: go-latest
 on:
     push:
         tags:
-            - 'v.go.*'
+            - 'go.*'
 jobs:
   build:
     runs-on: ubuntu-latest
