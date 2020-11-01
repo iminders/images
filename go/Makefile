@@ -1,4 +1,4 @@
-VERSION?=1.0.0
+VERSION?=1.15
 
 push:
 	echo "$(DOCKER_PASSWORD)" | docker login -u $(DOCKER_USERNAME) --password-stdin
