@@ -1,4 +1,4 @@
-name: Build GoLang Docker Image Version
+name: Go
 
 on:
   push:
