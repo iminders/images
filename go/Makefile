@@ -10,6 +10,7 @@ build:
 	make push
 
 latest:
-	VERSION=latest
-	docker build -f Dockerfile -t aiminders/go:$(VERSION) .
-	make push
+	docker build -f Dockerfile -t aiminders/go:latest .
+	echo "$(DOCKER_PASSWORD)" | docker login -u $(DOCKER_USERNAME) --password-stdin
+	docker push aiminders/go:latest
+	docker logout
