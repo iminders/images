@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
 
-    - name:  Build go image
+    - name:  Build go latest image
       run: |
         echo "build go latest image"
         cd go && make latest
