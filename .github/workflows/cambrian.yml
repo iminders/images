@@ -1,0 +1,20 @@
+name: cambrian
+
+on:
+  push:
+    branches: [cambrian]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Build cambrian image
+        run: |
+          echo "build cambrian image"
+          cd py && make cambrian
+        env:
+          DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+          DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
