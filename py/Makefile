@@ -9,6 +9,6 @@ push:
 	docker push aiminders/cambrian:latest
 	docker logout
 
-build:
-	docker build -f Dockerfile -t aiminders/cambrian:$(VERSION) .
+cambrian:
+	docker build -f cambrian.Dockerfile -t aiminders/cambrian:$(VERSION) .
 	make push

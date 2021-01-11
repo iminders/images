@@ -14,7 +14,7 @@ jobs:
       - name: Build cambrian image
         run: |
           echo "build cambrian image"
-          cd py && make build
+          cd py && make cambrian
         env:
           DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
           DOCKER_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
