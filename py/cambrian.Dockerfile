@@ -83,6 +83,7 @@ RUN (pip --no-cache-dir install \
     psycopg2-binary \
     func_timeout \
     mock \
+    coverage \
     rarfile)
 RUN (touch /root/WORKSPACE)
 
