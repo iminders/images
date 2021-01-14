@@ -2,7 +2,7 @@
 # VERSION?=latest
 # 20210111
 VERSION?=1.0.0
-PYTHON_VERSION?=3.8
+PYTHON_VERSION?=3.8.7
 
 cambrian:
 	docker build -f cambrian.Dockerfile -t aiminders/cambrian:$(VERSION) .
