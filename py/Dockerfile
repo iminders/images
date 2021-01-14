@@ -46,7 +46,6 @@ RUN pip install --upgrade pip
 RUN (pip --no-cache-dir install \
     coverage \
     cython \
-    func_timeout \
     mock \
     pytest \
     pytest-cov \
